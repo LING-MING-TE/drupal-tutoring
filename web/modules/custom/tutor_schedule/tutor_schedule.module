@@ -1,0 +1,71 @@
+<?php
+
+/**
+ * @file
+ * Contains tutor_schedule.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function tutor_schedule_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.tutor_schedule':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Manages tutor schedules and tutoring sessions for problem-solving classes.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function tutor_schedule_theme() {
+  return [
+    'tutor_schedule_slot' => [
+      'render element' => 'elements',
+      'template' => 'tutor-schedule-slot',
+    ],
+    'tutor_session' => [
+      'render element' => 'elements',
+      'template' => 'tutor-session',
+    ],
+  ];
+}
+
+/**
+ * Prepares variables for schedule slot templates.
+ *
+ * Default template: tutor-schedule-slot.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An associative array containing the schedule slot information.
+ */
+function template_preprocess_tutor_schedule_slot(array &$variables) {
+  $variables['schedule_slot'] = $variables['elements']['#tutor_schedule_slot'];
+  foreach (\Drupal\Core\Render\Element::children($variables['elements']) as $key) {
+    $variables['content'][$key] = $variables['elements'][$key];
+  }
+}
+
+/**
+ * Prepares variables for tutoring session templates.
+ *
+ * Default template: tutor-session.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An associative array containing the tutoring session information.
+ */
+function template_preprocess_tutor_session(array &$variables) {
+  $variables['tutor_session'] = $variables['elements']['#tutor_session'];
+  foreach (\Drupal\Core\Render\Element::children($variables['elements']) as $key) {
+    $variables['content'][$key] = $variables['elements'][$key];
+  }
+}

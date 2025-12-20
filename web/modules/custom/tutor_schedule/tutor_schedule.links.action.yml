@@ -1,0 +1,12 @@
+entity.tutor_schedule_slot.add_form:
+  route_name: entity.tutor_schedule_slot.add_form
+  title: 'Add Schedule Slot'
+  appears_on:
+    - entity.tutor_schedule_slot.collection
+
+entity.tutor_session.add_form:
+  route_name: entity.tutor_session.add_form
+  title: 'Book Session'
+  appears_on:
+    - entity.tutor_session.collection
+    - tutor_schedule.student_schedule

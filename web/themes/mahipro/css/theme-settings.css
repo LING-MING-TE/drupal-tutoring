@@ -1,0 +1,33 @@
+label[for="edit-mahipro"] {
+	width: 100%;
+	text-align: center;
+}
+.settings-form-title {
+	background-color: #1f2433;
+	background-image: url("../logo.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+	height: 80px;
+}
+/* Fieldset */
+.fieldset__label {
+	background-color: #eef4fb;
+}
+fieldset.set-default-fieldset,
+details.set-default-fieldset {
+	background-color: #ffeaa7;
+}
+fieldset.info-fieldset,
+details.info-fieldset {
+	background-color: #bbd9ff;
+	border: 1px solid #2e86de;
+}
+mark {
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+.form-element--type-color {
+  width: 10rem;
+}

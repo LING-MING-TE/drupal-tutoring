@@ -1,0 +1,123 @@
+# Schedule Slot routes
+entity.tutor_schedule_slot.collection:
+  path: '/admin/schedule/slots'
+  defaults:
+    _entity_list: 'tutor_schedule_slot'
+    _title: 'Schedule Slots'
+  requirements:
+    _permission: 'view all tutor_schedule_slot+administer tutor schedules'
+
+entity.tutor_schedule_slot.add_form:
+  path: '/admin/schedule/slot/add'
+  defaults:
+    _entity_form: 'tutor_schedule_slot.add'
+    _title: 'Add Schedule Slot'
+  requirements:
+    _permission: 'create tutor_schedule_slot'
+
+entity.tutor_schedule_slot.canonical:
+  path: '/schedule/slot/{tutor_schedule_slot}'
+  defaults:
+    _entity_view: 'tutor_schedule_slot'
+    _title_callback: '\Drupal\tutor_schedule\Entity\ScheduleSlot::getTitle'
+  requirements:
+    _entity_access: 'tutor_schedule_slot.view'
+  options:
+    parameters:
+      tutor_schedule_slot:
+        type: entity:tutor_schedule_slot
+
+entity.tutor_schedule_slot.edit_form:
+  path: '/admin/schedule/slot/{tutor_schedule_slot}/edit'
+  defaults:
+    _entity_form: 'tutor_schedule_slot.edit'
+    _title: 'Edit Schedule Slot'
+  requirements:
+    _entity_access: 'tutor_schedule_slot.update'
+  options:
+    parameters:
+      tutor_schedule_slot:
+        type: entity:tutor_schedule_slot
+
+entity.tutor_schedule_slot.delete_form:
+  path: '/admin/schedule/slot/{tutor_schedule_slot}/delete'
+  defaults:
+    _entity_form: 'tutor_schedule_slot.delete'
+    _title: 'Delete Schedule Slot'
+  requirements:
+    _entity_access: 'tutor_schedule_slot.delete'
+  options:
+    parameters:
+      tutor_schedule_slot:
+        type: entity:tutor_schedule_slot
+
+# Teacher's personal schedule
+tutor_schedule.teacher_schedule:
+  path: '/schedule/my-schedule'
+  defaults:
+    _controller: '\Drupal\tutor_schedule\Controller\TeacherScheduleController::mySchedule'
+    _title: 'My Teaching Schedule'
+  requirements:
+    _permission: 'view own tutor_schedule_slot'
+
+# Student available slots
+tutor_schedule.student_schedule:
+  path: '/schedule/available'
+  defaults:
+    _controller: '\Drupal\tutor_schedule\Controller\ScheduleController::availableSlots'
+    _title: 'Available Tutoring Slots'
+  requirements:
+    _permission: 'view published tutor_schedule_slot'
+
+# Tutoring Session routes
+entity.tutor_session.collection:
+  path: '/admin/schedule/sessions'
+  defaults:
+    _entity_list: 'tutor_session'
+    _title: 'Tutoring Sessions'
+  requirements:
+    _permission: 'view all tutor_session+administer tutor schedules'
+
+entity.tutor_session.add_form:
+  path: '/schedule/session/add'
+  defaults:
+    _entity_form: 'tutor_session.add'
+    _title: 'Book Tutoring Session'
+  requirements:
+    _permission: 'create tutor_session'
+
+entity.tutor_session.canonical:
+  path: '/schedule/session/{tutor_session}'
+  defaults:
+    _entity_view: 'tutor_session'
+    _title_callback: '\Drupal\tutor_schedule\Entity\TutoringSession::getTitle'
+  requirements:
+    _entity_access: 'tutor_session.view'
+  options:
+    parameters:
+      tutor_session:
+        type: entity:tutor_session
+
+entity.tutor_session.edit_form:
+  path: '/schedule/session/{tutor_session}/edit'
+  defaults:
+    _entity_form: 'tutor_session.edit'
+    _title: 'Edit Tutoring Session'
+  requirements:
+    _entity_access: 'tutor_session.update'
+  options:
+    parameters:
+      tutor_session:
+        type: entity:tutor_session
+
+entity.tutor_session.delete_form:
+  path: '/schedule/session/{tutor_session}/delete'
+  defaults:
+    _entity_form: 'tutor_session.delete'
+    _title: 'Delete Tutoring Session'
+  requirements:
+    _entity_access: 'tutor_session.delete'
+  options:
+    parameters:
+      tutor_session:
+        type: entity:tutor_session

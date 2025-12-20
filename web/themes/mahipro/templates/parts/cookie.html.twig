@@ -1,0 +1,15 @@
+{{ attach_library('mahipro/cookie_alert') }}
+<div class="cookiealert" role="alert">
+  <div class="container">
+    <div class="cookiealert-container">
+      <div class="cookiealert-message text-center">
+        {% if cookie_message_custom != '' %}
+          {{ cookie_message_custom | striptags('<p>,<div>,<span>,<a>,<img>,<h1>,<h2>,<h3>,<h4>,<h5>,<h6>,<em>,<strong>,<br>,<hr>,<i>,<mark>,<del>') | raw }}
+        {% else %}
+          This site uses cookies. By continuing to browse the site you are agreeing to our use of cookies.
+      {% endif %}
+      </div>{# cookiealert-message #}
+      <div class="text-center"><button type="button" class="acceptcookies" aria-label="Close">{{ 'I agree'|t }}</button></div>{# cookiealert-button #}
+    </div>{# cookiealert-container #}
+  </div>{# container #}
+</div>{# cookiealert #}

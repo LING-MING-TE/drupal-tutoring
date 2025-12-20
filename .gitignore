@@ -1,0 +1,23 @@
+# Drupal 核心和貢獻模組（如果使用 Composer 管理）
+/vendor/
+/core/
+/modules/contrib/
+/themes/contrib/
+/profiles/contrib/
+
+# 用戶上傳的檔案
+/sites/*/files/
+
+# 設定檔（包含敏感資訊）
+/sites/*/settings.local.php
+/sites/*/services*.yml
+
+# 私密檔案
+/sites/*/private/
+
+# DDEV 相關
+/.ddev/
+
+# 暫存檔案
+*.log
+.DS_Store

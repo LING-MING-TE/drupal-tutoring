@@ -1,0 +1,81 @@
+{% if preloader %}
+<div class="loader">
+  <div class="loader-inner">
+    <div class="loader-icon">
+      <span></span>
+    </div>
+  </div>
+</div>
+{% endif %}
+<header class="header dark">
+  {% if page.header_top %}
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top-block">
+          {{ page.header_top }}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+  <div class="header-main {{ sticky_header ? 'header-fixed' }}">
+    <div class="container">
+      <div class="header-main-container">
+        {% if page.site_branding %}
+          <div class="site-branding-region">
+            {{ page.site_branding }}
+          </div> <!--/.site-branding -->
+        {% endif %}
+        {% if page.search_box or  page.primary_menu or sliding_sidebar %}
+          <div class="header-right">
+            {% if page.primary_menu %}
+              <button class="mobile-menu-icon" aria-label="Open main menu" title="Open main menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button><!-- /mobile-menu -->
+              <div class="primary-menu-wrapper">
+                <div class="menu-wrap">
+                  <button class="close-mobile-menu" aria-label="close main menu" title="close main menu"><i class="icon-close"></i></button>
+                  {{ page.primary_menu }}
+                </div>
+              </div><!-- /primary-menu-wrapper -->
+            {% endif %}
+            {% if page.search_box %}
+              <button class="search-icon" aria-label="Open search form" title="search">
+                <i class="icon-search"></i>
+              </button><!--/.search icon -->
+              <div class="search-box">
+                <section class="search-box-close" aria-label="Close Search form"></section>
+                <div class="container">
+                  <div class="search-box-content">
+                    {{ page.search_box }}
+                  </div>
+                </div>
+                <section class="search-box-close" aria-label="Close Search form"></section>
+              </div><!--/.search-box -->
+            {% endif %} <!-- end page.search_box -->
+            {% if sliding_sidebar %}
+            <button class="sidebar-menu-icon" aria-label="open sidebar" title="open sidebar">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button><!-- /sidebar-menu-icon -->
+            {% endif %}  
+          </div><!--/.header-right -->
+        {% endif %}
+      </div><!--/header-main-container -->
+    </div><!--/container-->
+  </div><!--/header-main-->
+  {% if sticky_header %}
+  <div class="sticky-header-height"></div>
+  {% endif %}
+  {% if is_front and slider_show %}
+    {% include '@mahipro/parts/slider.html.twig' %}
+  {% elseif not is_front and page.page_header %}
+    <div class="page-header">
+      <div class="container">
+        {{ page.page_header }}
+      </div><!--/container-->
+    </div>
+  {% endif %}
+</header>

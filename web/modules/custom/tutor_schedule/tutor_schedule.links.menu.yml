@@ -1,0 +1,28 @@
+# Admin menu link
+tutor_schedule.admin_slots:
+  title: 'Schedule Slots'
+  parent: system.admin_content
+  description: 'Manage tutor schedule slots'
+  route_name: entity.tutor_schedule_slot.collection
+  weight: 10
+
+tutor_schedule.admin_sessions:
+  title: 'Tutoring Sessions'
+  parent: system.admin_content
+  description: 'Manage tutoring sessions'
+  route_name: entity.tutor_session.collection
+  weight: 11
+
+# Teacher menu link
+tutor_schedule.teacher:
+  title: 'My Teaching Schedule'
+  route_name: tutor_schedule.teacher_schedule
+  menu_name: account
+  weight: 5
+
+# Student menu link
+tutor_schedule.student:
+  title: 'Book Tutoring'
+  route_name: tutor_schedule.student_schedule
+  menu_name: main
+  weight: 10

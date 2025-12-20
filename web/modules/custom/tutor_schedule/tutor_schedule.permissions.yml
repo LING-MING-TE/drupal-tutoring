@@ -1,0 +1,52 @@
+administer tutor schedules:
+  title: 'Administer tutor schedules'
+  description: 'Full administrative access to tutor schedules and sessions'
+  restrict access: true
+
+create tutor_schedule_slot:
+  title: 'Create schedule slots'
+  description: 'Create new schedule slots'
+
+edit own tutor_schedule_slot:
+  title: 'Edit own schedule slots'
+  description: 'Edit schedule slots assigned to own account'
+
+edit any tutor_schedule_slot:
+  title: 'Edit any schedule slot'
+  description: 'Edit any schedule slot regardless of owner'
+
+delete own tutor_schedule_slot:
+  title: 'Delete own schedule slots'
+  description: 'Delete schedule slots assigned to own account'
+
+delete any tutor_schedule_slot:
+  title: 'Delete any schedule slot'
+  description: 'Delete any schedule slot regardless of owner'
+
+view published tutor_schedule_slot:
+  title: 'View published schedule slots'
+  description: 'View published schedule slots (for students to browse)'
+
+view own tutor_schedule_slot:
+  title: 'View own schedule slots'
+  description: 'Teachers can view their own schedule slots'
+
+view all tutor_schedule_slot:
+  title: 'View all schedule slots'
+  description: 'View all schedule slots including unpublished'
+
+create tutor_session:
+  title: 'Create tutoring sessions'
+  description: 'Create new tutoring session records'
+
+edit own tutor_session:
+  title: 'Edit own tutoring sessions'
+  description: 'Edit tutoring sessions where user is student or tutor'
+
+view own tutor_session:
+  title: 'View own tutoring sessions'
+  description: 'View tutoring sessions where user is student or tutor'
+
+view all tutor_session:
+  title: 'View all tutoring sessions'
+  description: 'View all tutoring sessions regardless of relationship'

@@ -1,0 +1,83 @@
+# These will be loaded on every pages.
+global-styling:
+  version: 1.1.1
+  css:
+    theme:
+      css/style.css: {}
+  js:
+    js/mahipro.js: {}
+  dependencies:
+    - core/jquery
+# Slider
+slider:
+  version: 2.3.4
+  css:
+    component:
+      css/slider.css: {}
+  js:
+    js/slider.js: {}
+  dependencies:
+    - core/jquery
+
+# Cookie Alert
+cookie_alert:
+  version: 1.1.1
+  js:
+    js/cookiealert.js: {}
+
+# Google Fonts from local
+googlefontslocal:
+  css:
+    theme:
+      css/font.css: {}
+
+# Book
+book:
+  version: 1.1.1
+  css:
+    component:
+      css/book.css: {}
+
+# FontAwesome 5
+fontawesome5:
+  version: 5.15.4
+  css:
+    component:
+      css/fontawesome5.css: {weight: -10}
+
+# FontAwesome 6
+fontawesome6:
+  version: 6.7.2
+  css:
+    component:
+      css/fontawesome6.css: {weight: -10}
+
+# Bootstrap Icons
+bootstrap-icons:
+  version: 1.11.3
+  css:
+    component:
+      css/bootstrap-icons.css: {}
+
+# RTL Language support
+rtl:
+  version: 1.1.1
+  css:
+    theme:
+      css/rtl.css: {}
+
+# Theme settings
+theme-settings:
+  version: 1.1.1
+  css:
+    theme:
+      css/theme-settings.css: {}
+
+# Animated content when in view
+animated-content:
+  version: 1.1.1
+  js:
+    js/animate.js: {}
+  css:
+    component:
+      css/animate.css: {}

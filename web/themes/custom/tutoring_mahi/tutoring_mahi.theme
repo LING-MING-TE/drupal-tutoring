@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * @file
+ * 全科補習班 Mahi 主題的主題函數
+ */
+
+use Drupal\Core\Template\Attribute;
+
+/**
+ * Implements hook_preprocess_HOOK() for page templates.
+ */
+function tutoring_mahi_preprocess_page(&$variables) {
+  // 在這裡添加頁面預處理邏輯
+  // 例如：添加自訂變數到模板
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for node templates.
+ */
+function tutoring_mahi_preprocess_node(&$variables) {
+  // 在這裡添加節點預處理邏輯
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter() for pages.
+ */
+function tutoring_mahi_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  // 在這裡添加自訂模板建議
+}

@@ -1,0 +1,143 @@
+<?php
+/**
+ * MahiPro theme overrides and preprocess functions.
+ */
+use Drupal\file\Entity\File;
+/**
+ * Sanitise input urls.
+ */
+function santise_val_url($url) {
+	if ($url != '') {
+		// Sanitise (remove all illegal characters) from url.
+		$url = filter_var($url, FILTER_SANITIZE_URL);
+
+		// Validate url.
+		if (filter_var($url, FILTER_VALIDATE_URL) == TRUE) {
+			$url = $url;
+		} else {
+			$url = '#';
+		}
+		return $url;
+	}
+}
+
+/* *
+ * Mahi Pro page preprocess.
+ */
+function mahipro_preprocess_page(array &$variables) {
+  $config = \Drupal::config('system.site');
+  $variables['site_name'] = $config->get('name');
+  $variables['site_slogan'] = $config->get('slogan');
+  $variables['slider_show'] = theme_get_setting('slider_show', 'mahipro');
+  $variables['slider_code'] = theme_get_setting('slider_code', 'mahipro');
+  $variables['all_icons_show'] = theme_get_setting('all_icons_show', 'mahipro');
+  $variables['facebook_url'] = santise_val_url(theme_get_setting('facebook_url', 'mahipro'));
+  $variables['twitter_url'] = santise_val_url(theme_get_setting('twitter_url', 'mahipro'));
+  $variables['instagram_url'] = santise_val_url(theme_get_setting('instagram_url', 'mahipro'));
+  $variables['linkedin_url'] = santise_val_url(theme_get_setting('linkedin_url', 'mahipro'));
+  $variables['youtube_url'] = santise_val_url(theme_get_setting('youtube_url', 'mahipro'));
+  $variables['vk_url'] = santise_val_url(theme_get_setting('vk_url', 'mahipro'));
+  $variables['vimeo_url'] = santise_val_url(theme_get_setting('vimeo_url', 'mahipro'));
+  $variables['whatsapp_url'] = santise_val_url(theme_get_setting('whatsapp_url', 'mahipro'));
+  $variables['github_url'] = santise_val_url(theme_get_setting('github_url', 'mahipro'));
+  $variables['telegram_url'] = santise_val_url(theme_get_setting('telegram_url', 'mahipro'));
+  $variables['scrolltotop_on'] = theme_get_setting('scrolltotop_on', 'mahipro');
+  $variables['copyright_text'] = theme_get_setting('copyright_text', 'mahipro');
+  $variables['copyright_text_custom'] = theme_get_setting('copyright_text_custom', 'mahipro');
+  $variables['cookie_message'] = theme_get_setting('cookie_message', 'mahipro');
+  $variables['cookie_message_custom'] = theme_get_setting('cookie_message_custom', 'mahipro');
+  $variables['sliding_sidebar'] = theme_get_setting('sliding_sidebar', 'mahipro');
+
+  // header
+  $variables['sticky_header'] = theme_get_setting('sticky_header', 'mahipro');
+
+  // components
+  $variables['preloader'] = theme_get_setting('preloader', 'mahipro');
+  $variables['animated_content'] = theme_get_setting('animated_content', 'mahipro');
+}
+
+/* *
+ * Node preprocess.
+ */
+function mahipro_preprocess_node(array &$variables) {
+	$variables['node_author_pic'] = theme_get_setting('node_author_pic', 'mahipro');
+	$variables['node_tags'] = theme_get_setting('node_tags', 'mahipro');
+}
+
+/**
+ * Html preprocess for Mahi theme.
+ */
+function mahipro_preprocess_html(&$variables) {
+  $variables['base_path'] = base_path();
+  $variables['font_src'] = theme_get_setting('font_src', 'mahipro');
+	// Layout
+	$variables['container_width'] = theme_get_setting('container_width', 'mahipro');
+	$variables['header_width'] = theme_get_setting('header_width', 'mahipro');
+	$variables['main_width'] = theme_get_setting('main_width', 'mahipro');
+	$variables['footer_width'] = theme_get_setting('footer_width', 'mahipro');
+	// Insert codes
+  $variables['css_extra'] = theme_get_setting('css_extra', 'mahipro');
+  $variables['css_code'] = theme_get_setting('css_code', 'mahipro');
+	$variables['insert_head'] = theme_get_setting('insert_head', 'mahipro');
+	$variables['head_code'] = theme_get_setting('head_code', 'mahipro');
+	$variables['insert_body_start'] = theme_get_setting('insert_body_start', 'mahipro');
+	$variables['body_start_code'] = theme_get_setting('body_start_code', 'mahipro');
+	$variables['insert_body_end'] = theme_get_setting('insert_body_end', 'mahipro');
+	$variables['body_end_code'] = theme_get_setting('body_end_code', 'mahipro');
+	$variables['highlight_author_comment'] = theme_get_setting('highlight_author_comment', 'mahipro');
+  $variables['fontawesome_five'] = theme_get_setting('fontawesome_five', 'mahipro');
+  $variables['fontawesome_six'] = theme_get_setting('fontawesome_six', 'mahipro');
+	$variables['bootstrapicons'] = theme_get_setting('bootstrapicons', 'mahipro');
+  // color
+  $variables['color_scheme'] = theme_get_setting('color_scheme', 'mahipro');
+	$variables['color_primary'] = theme_get_setting('color_primary', 'mahipro');
+  $variables['color_secondary'] = theme_get_setting('color_secondary', 'mahipro');
+  $variables['color_primary_light'] = theme_get_setting('color_primary_light', 'mahipro');
+  $variables['bg_body'] = theme_get_setting('bg_body', 'mahipro');
+  $variables['text_color'] = theme_get_setting('text_color', 'mahipro');
+  $variables['bold_color'] = theme_get_setting('bold_color', 'mahipro');
+  $variables['light_color'] = theme_get_setting('light_color', 'mahipro');
+  $variables['dark_color'] = theme_get_setting('dark_color', 'mahipro');
+  $variables['dark_text_color'] = theme_get_setting('dark_text_color', 'mahipro');
+  $variables['border_color'] = theme_get_setting('border_color', 'mahipro');
+	$variables['border_dark'] = theme_get_setting('border_dark', 'mahipro');
+  $variables['slider_time'] = theme_get_setting('slider_time', 'mahipro');
+  $variables['slider_dots'] = theme_get_setting('slider_dots', 'mahipro');
+	$variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+	/* Slider image */
+	$slider_images = theme_get_setting('slider_images', 'mahipro');
+	if(!empty($slider_images)) {
+		foreach ($slider_images as $fid) {
+			$file = File::load($fid);
+			$file->setPermanent();
+			$file->save();
+			$file_usage = \Drupal::service('file.usage');
+			$file_usage->add($file, 'mahipro', 'theme', $fid);
+		}
+	}
+}
+
+/* *
+ * Add current page to breadcrumb.
+ */
+function mahipro_preprocess_breadcrumb(&$variables) {
+	$request = \Drupal::request();
+	$route_match = \Drupal::routeMatch();
+	$page_title = \Drupal::service('title_resolver')->getTitle($request, $route_match->getRouteObject());
+	if (!empty($page_title)) {
+		$variables['breadcrumb'][] = [
+			'text' => $page_title,
+		];
+		// Add cache context based on url.
+		$variables['#cache']['contexts'][] = 'url';
+	}
+}
+/**
+ * Implements THEME_preprocess_HOOK() for system messages block.
+ */
+use Drupal\Core\Render\Element\StatusMessages;
+
+function mahipro_preprocess_block__system_messages_block(&$variables) {
+  $variables['content'] = StatusMessages::renderMessages();
+	$variables['#cache']['max-age'] = 0;
+}

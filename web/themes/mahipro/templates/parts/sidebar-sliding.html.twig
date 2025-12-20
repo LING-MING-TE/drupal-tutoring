@@ -1,0 +1,8 @@
+<div class="sliding-sidebar dark">
+  <button class="close-sidebar" aria-label="close sidebar" title="close sidebar"><i class="icon-close"></i></button>
+  {% if page.sidebar_sliding %}
+    {{ page.sidebar_sliding }}
+  {% else %}
+    <p>Please add some content in <a href="{{ base_path }}admin/structure/block">Sliding Sidebar</a> block region.</p><p>For more information please refer to this tutorial page:<br /><a href="https://drupar.com/node/2677" target="_blank">Add content in sliding sidebar</a></p>
+  {% endif %}
+</div><!-- /sliding-sidebar -->

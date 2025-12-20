@@ -1,0 +1,5 @@
+# Schema for the configuration files of the Mahi Pro theme.
+
+mahipro.settings:
+  type: theme_settings
+  label: 'Mahi Pro Settings'

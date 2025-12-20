@@ -1,0 +1,18 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a tutoring session.
+ *
+ * Available variables:
+ * - tutor_session: The tutoring session entity.
+ * - content: All tutoring session items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.title }}.
+ *
+ * @ingroup themeable
+ */
+#}
+<article{{ attributes.addClass('tutoring-session') }}>
+  {% if content %}
+    {{ content }}
+  {% endif %}
+</article>

@@ -1,0 +1,17 @@
+{# templates/content/node--announcement-banner.html.twig #}
+<div class="announcement-banner-item" 
+     style="background-image: url('{{ file_url(content.field_background_image[0]['#item'].entity.uri.value) }}');">
+  <div class="announcement-overlay">
+    <div class="announcement-content-wrapper">
+      <h2 class="announcement-title">{{ label }}</h2>
+      <div class="announcement-body">
+        {{ content.field_announcement_content }}
+      </div>
+      {% if content.field_link %}
+        <div class="announcement-link">
+          {{ content.field_link }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>

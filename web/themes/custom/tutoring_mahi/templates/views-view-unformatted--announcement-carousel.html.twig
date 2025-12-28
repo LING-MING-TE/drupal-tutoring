@@ -1,0 +1,28 @@
+{# templates/views/views-view-unformatted--announcement-carousel.html.twig #}
+<div class="announcement-carousel-wrapper">
+  <div class="announcement-carousel" id="announcementCarousel">
+    {% for row in rows %}
+      <div class="carousel-item{{ loop.first ? ' active' : '' }}">
+        {{ row.content }}
+      </div>
+    {% endfor %}
+  </div>
+  
+  {# 輪播控制按鈕 #}
+  <button class="carousel-control prev" aria-label="上一則">
+    <span>&lt;</span>
+  </button>
+  <button class="carousel-control next" aria-label="下一則">
+    <span>&gt;</span>
+  </button>
+  
+  {# 指示器 #}
+  <div class="carousel-indicators">
+    {% for row in rows %}
+      <button class="indicator{{ loop.first ? ' active' : '' }}" 
+              data-slide="{{ loop.index0 }}"
+              aria-label="公告 {{ loop.index }}">
+      </button>
+    {% endfor %}
+  </div>
+</div>

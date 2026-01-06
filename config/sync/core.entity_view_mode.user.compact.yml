@@ -1,0 +1,13 @@
+uuid: a3da036f-1fbd-470b-b58e-aee01355e6a9
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: TtD7OuGskOsQfoGyxXkrdtllBpR37J19d5BMQDZWJgA
+id: user.compact
+label: Sade
+description: ''
+targetEntityType: user
+cache: true

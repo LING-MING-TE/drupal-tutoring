@@ -1,0 +1,11 @@
+uuid: db4adc48-eb3d-4951-97b3-c57f4b1252cc
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.ce_shi_yong_fu
+id: taxonomy_term.ce_shi_yong_fu
+target_entity_type_id: taxonomy_term
+target_bundle: ce_shi_yong_fu
+default_langcode: site_default
+language_alterable: false

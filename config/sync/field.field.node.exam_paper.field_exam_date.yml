@@ -1,0 +1,21 @@
+uuid: 6eac31b1-f890-499c-8dd1-c612cb778f08
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_exam_date
+    - node.type.exam_paper
+  module:
+    - datetime
+id: node.exam_paper.field_exam_date
+field_name: field_exam_date
+entity_type: node
+bundle: exam_paper
+label: 日期
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

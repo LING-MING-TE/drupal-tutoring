@@ -1,0 +1,33 @@
+uuid: 1fd1f3c6-9607-4716-a9df-f3862c647237
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - group
+    - options
+id: group.field_subject
+field_name: field_subject
+entity_type: group
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: math
+      label: 數學
+    -
+      value: english
+      label: 英文
+    -
+      value: chinese
+      label: 國文
+    -
+      value: social
+      label: 社會
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

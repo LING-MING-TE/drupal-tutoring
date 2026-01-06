@@ -1,0 +1,21 @@
+uuid: 6d4bf1a6-255b-40ee-81f1-995dd0c1d998
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - masquerade
+  theme:
+    - tutoring_mahi
+id: tutoring_mahi_masquerade
+theme: tutoring_mahi
+region: content
+weight: 0
+provider: null
+plugin: masquerade
+settings:
+  id: masquerade
+  label: Masquerade
+  label_display: visible
+  provider: masquerade
+  show_unmasquerade_link: true
+visibility: {  }

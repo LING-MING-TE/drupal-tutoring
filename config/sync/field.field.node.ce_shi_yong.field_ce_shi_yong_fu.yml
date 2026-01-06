@@ -1,0 +1,29 @@
+uuid: 48e3d21b-b28b-4341-8979-3e583301ce76
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ce_shi_yong_fu
+    - node.type.ce_shi_yong
+    - taxonomy.vocabulary.ce_shi_yong_fu
+id: node.ce_shi_yong.field_ce_shi_yong_fu
+field_name: field_ce_shi_yong_fu
+entity_type: node
+bundle: ce_shi_yong
+label: 測試用父
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      ce_shi_yong_fu: ce_shi_yong_fu
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,13 @@
+uuid: 62496046-0bfa-40b5-8631-a005086818f5
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: JBptjnfuOMtsdKygklXxoOgeOCTMtQxlkymjnnj-cC0
+id: node_unpromote_action
+label: 取消推薦內容到首頁
+type: node
+plugin: node_unpromote_action
+configuration: {  }

@@ -1,0 +1,22 @@
+uuid: 4e670eab-9daf-4163-ba2c-4cd15f5bd1fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tutoring_mahi
+_core:
+  default_config_hash: OKAm3GdZcG946sPrKqE2Lzc7UyUtF_lzdnzOJRJSoG8
+id: tutoring_mahi_powered
+theme: tutoring_mahi
+region: hidden_blocks
+weight: -4
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

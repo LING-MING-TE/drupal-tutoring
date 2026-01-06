@@ -1,0 +1,21 @@
+uuid: 0f586c6f-2007-4671-9b76-486c45436f24
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_class_section
+    - group.type.course_group
+  module:
+    - options
+id: group.course_group.field_class_section
+field_name: field_class_section
+entity_type: group
+bundle: course_group
+label: 班別
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

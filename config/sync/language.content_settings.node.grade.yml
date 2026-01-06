@@ -1,0 +1,11 @@
+uuid: 23042d1b-f383-4b83-8665-fbee847388d3
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - node.type.grade
+id: node.grade
+target_entity_type_id: node
+target_bundle: grade
+default_langcode: site_default
+language_alterable: false

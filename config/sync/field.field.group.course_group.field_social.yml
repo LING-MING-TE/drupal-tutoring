@@ -1,0 +1,21 @@
+uuid: cc630037-a3d2-4736-ab7e-96463102f7b4
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_social
+    - group.type.course_group
+  module:
+    - options
+id: group.course_group.field_social
+field_name: field_social
+entity_type: group
+bundle: course_group
+label: 年級
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

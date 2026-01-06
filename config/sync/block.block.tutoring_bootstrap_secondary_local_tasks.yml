@@ -1,0 +1,22 @@
+uuid: 38d04851-5e4c-4762-aaaa-8e89d32d36e3
+langcode: zh-hant
+status: true
+dependencies:
+  theme:
+    - tutoring_bootstrap
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: tutoring_bootstrap_secondary_local_tasks
+theme: tutoring_bootstrap
+region: header
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

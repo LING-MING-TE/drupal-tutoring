@@ -1,0 +1,13 @@
+uuid: f9779cce-0ee5-4ca8-b226-77715655d0d8
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: N0RDBTqiK4dKoN4p4oW2j0SGWycdHyALUe9M-Ofp89U
+id: node_promote_action
+label: 推薦內容到首頁
+type: node
+plugin: node_promote_action
+configuration: {  }

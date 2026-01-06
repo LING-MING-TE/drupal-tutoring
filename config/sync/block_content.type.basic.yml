@@ -1,0 +1,10 @@
+uuid: 5c4c0f11-72cc-4319-b478-d8776114724e
+langcode: zh-hant
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pQP5iQy4SdhAMVcjDUncCfkJmTofnHVtXrsMzx4k6Yk
+id: basic
+label: 基本區塊
+revision: false
+description: 一個基本區塊包含標題和內容。

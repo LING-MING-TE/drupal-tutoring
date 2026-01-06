@@ -1,0 +1,10 @@
+uuid: 4015fe0d-3261-42c6-9415-18815cbab8ae
+langcode: zh-hant
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Z7KuCUwM_WdTNvLcoltuX3_8d-s-8FZkTN6KgNwF0eM
+id: html_month
+label: 'HTML 月份'
+locked: true
+pattern: Y-m

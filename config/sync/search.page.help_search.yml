@@ -1,0 +1,14 @@
+uuid: 5f3abe9a-bf22-4756-910d-910294862f3b
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - help
+_core:
+  default_config_hash: RZ-bcSekNSsAbIPLW7Gmyd3uUjIOSrPvnb8RCCZYJm8
+id: help_search
+label: 說明
+path: help
+weight: 0
+plugin: help_search
+configuration: {  }

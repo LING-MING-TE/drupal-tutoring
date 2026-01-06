@@ -1,0 +1,21 @@
+uuid: 1722adff-fc85-4f49-a1ed-641b298b5564
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_subject
+    - group.type.course_group
+  module:
+    - options
+id: group.course_group.field_subject
+field_name: field_subject
+entity_type: group
+bundle: course_group
+label: 科目
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

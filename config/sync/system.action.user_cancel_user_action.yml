@@ -1,0 +1,13 @@
+uuid: 6fcad56f-100f-49f5-8e9a-251c8c64bc5d
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: nvrL9bFilzBvm2bjO9rQnFDpBA7dBBUjShSSt6NS-DU
+id: user_cancel_user_action
+label: 取消選取的使用者帳號
+type: user
+plugin: user_cancel_user_action
+configuration: {  }

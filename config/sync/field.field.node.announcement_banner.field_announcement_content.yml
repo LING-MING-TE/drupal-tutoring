@@ -1,0 +1,28 @@
+uuid: da2e7035-5c13-4187-bf2a-5cf2c2f0ec19
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_announcement_content
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.restricted_html
+    - node.type.announcement_banner
+  module:
+    - text
+id: node.announcement_banner.field_announcement_content
+field_name: field_announcement_content
+entity_type: node
+bundle: announcement_banner
+label: 公告內容
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - restricted_html
+    - full_html
+field_type: text_long

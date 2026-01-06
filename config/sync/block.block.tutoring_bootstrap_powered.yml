@@ -1,0 +1,22 @@
+uuid: 3e75e2f4-53bc-4f5a-a435-23402de03b20
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tutoring_bootstrap
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: tutoring_bootstrap_powered
+theme: tutoring_bootstrap
+region: header
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: '由 Drupal 所提供'
+  label_display: '0'
+  provider: system
+visibility: {  }

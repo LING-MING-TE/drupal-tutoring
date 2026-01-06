@@ -1,0 +1,20 @@
+uuid: ddb62804-3124-4cd5-9d76-56db2c9d3174
+langcode: zh-hant
+status: true
+dependencies:
+  theme:
+    - tutoring_bootstrap
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: tutoring_bootstrap_page_title
+theme: tutoring_bootstrap
+region: header
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

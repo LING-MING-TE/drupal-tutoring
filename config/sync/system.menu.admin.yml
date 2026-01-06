@@ -1,0 +1,10 @@
+uuid: fcfa22a1-7931-445a-b1f0-43f9064ceab8
+langcode: zh-hant
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sapEi2YDGoI9yQIT_WgIV2vUdQ6DScH0V3fAyTadAL0
+id: admin
+label: 管理
+description: 管理工作連結
+locked: true

@@ -1,0 +1,22 @@
+uuid: 93d29fdc-f819-49e7-b286-357b97eb3747
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_content
+    - node.type.class_report
+  module:
+    - text
+id: node.class_report.field_report_content
+field_name: field_report_content
+entity_type: node
+bundle: class_report
+label: 內容
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

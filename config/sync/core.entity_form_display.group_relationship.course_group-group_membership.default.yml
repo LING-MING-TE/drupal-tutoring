@@ -1,0 +1,55 @@
+uuid: 9f637604-b1ba-4209-9c43-797b6067ad50
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - field.field.group_relationship.course_group-group_membership.field_student_notes
+    - field.field.group_relationship.course_group-group_membership.group_roles
+    - group.relationship_type.course_group-group_membership
+  module:
+    - path
+    - text
+id: group_relationship.course_group-group_membership.default
+targetEntityType: group_relationship
+bundle: course_group-group_membership
+mode: default
+content:
+  entity_id:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_student_notes:
+    type: text_textarea
+    weight: 32
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  group_roles:
+    type: options_buttons
+    weight: 31
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  uid: true

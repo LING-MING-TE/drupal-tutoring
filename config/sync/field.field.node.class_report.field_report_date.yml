@@ -1,0 +1,21 @@
+uuid: 6b4ceba2-e013-4cef-a89b-f196369a9c37
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_date
+    - node.type.class_report
+  module:
+    - datetime
+id: node.class_report.field_report_date
+field_name: field_report_date
+entity_type: node
+bundle: class_report
+label: 日期
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

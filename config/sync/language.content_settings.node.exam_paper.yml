@@ -1,0 +1,11 @@
+uuid: 5d06c91c-5e31-46a5-912d-8130e0e33aef
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - node.type.exam_paper
+id: node.exam_paper
+target_entity_type_id: node
+target_bundle: exam_paper
+default_langcode: site_default
+language_alterable: false

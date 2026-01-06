@@ -1,0 +1,16 @@
+uuid: b17a402e-51f3-4526-8deb-bdcdb09632d7
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - group.type.course_group
+id: course_group-course_student
+label: 課程學生
+weight: 104
+admin: false
+scope: individual
+global_role: null
+group_type: course_group
+permissions:
+  - 'view group'
+  - 'view group_membership relationship'

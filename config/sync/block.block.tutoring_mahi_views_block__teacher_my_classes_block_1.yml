@@ -1,0 +1,30 @@
+uuid: 8ab80d02-faa2-4d43-addb-350dac3c50d3
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - views.view.teacher_my_classes
+  module:
+    - system
+    - views
+  theme:
+    - tutoring_mahi
+id: tutoring_mahi_views_block__teacher_my_classes_block_1
+theme: tutoring_mahi
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:teacher_my_classes-block_1'
+settings:
+  id: 'views_block:teacher_my_classes-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: null
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/group/*'

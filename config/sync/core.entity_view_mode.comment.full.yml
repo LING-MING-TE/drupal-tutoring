@@ -1,0 +1,13 @@
+uuid: 198705e6-d796-484c-9912-aee41f8612c8
+langcode: zh-hant
+status: false
+dependencies:
+  module:
+    - comment
+_core:
+  default_config_hash: N4mUjXpPckUkVRY1PbKw4GGoL1i2ECU7PL3EreiKStk
+id: comment.full
+label: 回應全文
+description: ''
+targetEntityType: comment
+cache: true

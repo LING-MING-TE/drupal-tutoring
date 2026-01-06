@@ -1,0 +1,15 @@
+uuid: 9b5d8dcf-59b7-4531-a332-acc0acb114d1
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - group.type.course_group
+    - user.role.administrator
+id: course_group-admin_in
+label: 管理者
+weight: 102
+admin: true
+scope: insider
+global_role: administrator
+group_type: course_group
+permissions: {  }

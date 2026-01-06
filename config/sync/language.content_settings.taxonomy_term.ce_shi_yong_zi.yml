@@ -1,0 +1,11 @@
+uuid: 6a417e1a-073d-448c-8c0e-c3c8b8cb8fcb
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.ce_shi_yong_zi
+id: taxonomy_term.ce_shi_yong_zi
+target_entity_type_id: taxonomy_term
+target_bundle: ce_shi_yong_zi
+default_langcode: site_default
+language_alterable: false

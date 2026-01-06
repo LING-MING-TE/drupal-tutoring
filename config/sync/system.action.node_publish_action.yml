@@ -1,0 +1,13 @@
+uuid: 3df3a22f-4bfa-4035-aea8-ec14412bc7d9
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 2B9uF8NL5gutNKSdPRAhhAsDWFZZG1PJOBmx0aBGd_0
+id: node_publish_action
+label: 發佈內容
+type: node
+plugin: 'entity:publish_action:node'
+configuration: {  }

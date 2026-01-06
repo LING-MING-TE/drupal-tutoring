@@ -1,0 +1,13 @@
+uuid: 45678b29-caf1-41aa-a47c-9b8463211873
+langcode: zh-hant
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Fe3N1uqaAyyKJbVkqT-btXy3t98puW8GCRD822xjl10
+name: 文章
+type: article
+description: 使用<em>文章</em>於對時間敏感的內容如新聞、新聞稿或部落格文章。
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

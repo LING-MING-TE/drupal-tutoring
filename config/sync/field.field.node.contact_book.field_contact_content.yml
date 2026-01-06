@@ -1,0 +1,22 @@
+uuid: 6aec9fd0-1aaf-4cae-9059-e15b26af9eed
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_content
+    - node.type.contact_book
+  module:
+    - text
+id: node.contact_book.field_contact_content
+field_name: field_contact_content
+entity_type: node
+bundle: contact_book
+label: 內容
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

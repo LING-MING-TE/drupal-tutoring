@@ -1,0 +1,13 @@
+uuid: 1c10510d-0501-4b61-876c-4bd7729a7276
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - comment
+_core:
+  default_config_hash: vpBH8OmL4sdesCdeZLsW8KOutB5gkbreWJbfjhfFKaQ
+id: comment_delete_action
+label: 刪除回應
+type: comment
+plugin: 'entity:delete_action:comment'
+configuration: {  }

@@ -1,0 +1,22 @@
+uuid: 839345d1-e19b-4956-9716-fa27ffb5cb17
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tutoring_bootstrap
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: tutoring_bootstrap_messages
+theme: tutoring_bootstrap
+region: header
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

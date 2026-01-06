@@ -1,0 +1,9 @@
+uuid: 79f376a6-93c3-499c-8882-d95121bd2652
+langcode: zh-hant
+status: true
+dependencies: {  }
+name: 學級
+vid: grade_class
+description: 用於課程群組，數值表示該課程在國一時是哪一學年度
+weight: 0
+new_revision: false

@@ -1,0 +1,30 @@
+uuid: 19b453c5-ce61-452d-9b4b-c982c57678fb
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - group
+    - options
+id: group.field_social
+field_name: field_social
+entity_type: group
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: junior_1
+      label: 國一
+    -
+      value: junior_2
+      label: 國二
+    -
+      value: junior_3
+      label: 國三
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

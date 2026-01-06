@@ -1,0 +1,31 @@
+uuid: 50d0336a-7952-42a0-8c0b-718a24c1e66e
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - views.view.students_list
+  module:
+    - system
+    - views
+  theme:
+    - tutoring_mahi
+id: tutoring_mahi_views_block__students_list_block_1
+theme: tutoring_mahi
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:students_list-block_1'
+settings:
+  id: 'views_block:students_list-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping:
+    gid: '@group.group_route_context:group'
+  views_label: ''
+  items_per_page: null
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/group/*'

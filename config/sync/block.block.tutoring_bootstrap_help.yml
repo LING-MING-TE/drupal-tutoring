@@ -1,0 +1,22 @@
+uuid: 25da0abd-e3c7-4e16-b7bc-aa97d5de4b9e
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - tutoring_bootstrap
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: tutoring_bootstrap_help
+theme: tutoring_bootstrap
+region: header
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: 說明
+  label_display: '0'
+  provider: help
+visibility: {  }

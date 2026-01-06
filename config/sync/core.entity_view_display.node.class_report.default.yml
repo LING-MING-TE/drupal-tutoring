@@ -1,0 +1,40 @@
+uuid: 0cd7ede7-92da-434e-86f0-97725577f7c4
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - field.field.node.class_report.field_report_content
+    - field.field.node.class_report.field_report_date
+    - node.type.class_report
+  module:
+    - datetime
+    - text
+    - user
+id: node.class_report.default
+targetEntityType: node
+bundle: class_report
+mode: default
+content:
+  field_report_content:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_report_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

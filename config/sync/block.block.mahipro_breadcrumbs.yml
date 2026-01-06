@@ -1,0 +1,22 @@
+uuid: 950c721c-08c0-4376-b8d2-ccc870481a98
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mahipro
+_core:
+  default_config_hash: 5nC6AEN8CgUyFArlXbdUoTcsTNK5rT9A7ChTOUcQWLQ
+id: mahipro_breadcrumbs
+theme: mahipro
+region: page_header
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

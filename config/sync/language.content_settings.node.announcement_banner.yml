@@ -1,0 +1,11 @@
+uuid: aa4a2757-63a3-49c6-84c3-919b3d0730c9
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - node.type.announcement_banner
+id: node.announcement_banner
+target_entity_type_id: node
+target_bundle: announcement_banner
+default_langcode: site_default
+language_alterable: false

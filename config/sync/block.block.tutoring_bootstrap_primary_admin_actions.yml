@@ -1,0 +1,20 @@
+uuid: 58d41f75-934b-48ed-a1ab-7aa957a51ced
+langcode: zh-hant
+status: true
+dependencies:
+  theme:
+    - tutoring_bootstrap
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: tutoring_bootstrap_primary_admin_actions
+theme: tutoring_bootstrap
+region: header
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,38 @@
+uuid: 7bf6c52a-d262-45c7-be79-69a81441ceef
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - field.field.node.ce_shi_yong.field_ce_shi_yong_fu
+    - field.field.node.ce_shi_yong.field_ce_shi_yong_zi
+    - node.type.ce_shi_yong
+  module:
+    - user
+id: node.ce_shi_yong.default
+targetEntityType: node
+bundle: ce_shi_yong
+mode: default
+content:
+  field_ce_shi_yong_fu:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_ce_shi_yong_zi:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

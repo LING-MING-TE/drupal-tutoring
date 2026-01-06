@@ -1,0 +1,34 @@
+uuid: 88ffca45-df8c-4164-a3aa-6daeb2906d82
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - field.field.group_relationship.course_group-group_membership.field_student_notes
+    - field.field.group_relationship.course_group-group_membership.group_roles
+    - group.relationship_type.course_group-group_membership
+  module:
+    - text
+id: group_relationship.course_group-group_membership.default
+targetEntityType: group_relationship
+bundle: course_group-group_membership
+mode: default
+content:
+  field_student_notes:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: -3
+    region: content
+  group_roles:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+hidden:
+  entity_id: true
+  langcode: true
+  uid: true

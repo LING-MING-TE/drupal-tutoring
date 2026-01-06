@@ -1,0 +1,25 @@
+uuid: e43f54ee-12e0-48ec-935e-28d08310a72a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tutoring_mahi
+_core:
+  default_config_hash: 0lTvXcl8Xk_iCJ-C8HS9POivbRndMjRnHXy0vLaVGcc
+id: tutoring_mahi_site_branding
+theme: tutoring_mahi
+region: site_branding
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: false
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

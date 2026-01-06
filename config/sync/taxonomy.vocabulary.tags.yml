@@ -1,0 +1,11 @@
+uuid: 996e0320-8a07-419f-bd9f-69df2b79e10d
+langcode: zh-hant
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: iTEzwrEQ_4JIb-OYGiqzyF2TmMgWyWayresXcWgwGWM
+name: '標籤 (Tags)'
+vid: tags
+description: '透過標籤 (tags) 來為相似的主題文章做分群、分類。'
+weight: 0
+new_revision: false

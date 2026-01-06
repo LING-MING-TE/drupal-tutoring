@@ -1,0 +1,10 @@
+uuid: d1178162-6130-4636-914e-ceaf8ab64b93
+langcode: zh-hant
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 5VpawMrKPEPCkoO4YpPa0TDFO2dgiIHfTziJtwlmUxc
+id: html_yearless_date
+label: 'HTML Yearless date'
+locked: true
+pattern: m-d

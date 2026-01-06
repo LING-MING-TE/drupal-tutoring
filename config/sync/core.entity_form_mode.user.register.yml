@@ -1,0 +1,13 @@
+uuid: 7025781d-17a9-4e35-ba3e-88413f7c010c
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: 1TFiplNN7Wmj_DtVLLLP-NLPYpZJdAswKY-vTrYgFyo
+id: user.register
+label: 註冊
+description: null
+targetEntityType: user
+cache: true

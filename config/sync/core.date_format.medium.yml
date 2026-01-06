@@ -1,0 +1,10 @@
+uuid: 6eacc7a1-1afc-4e20-98bd-13af80a34b65
+langcode: zh-hant
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: q7pDV2d9qFh1IVqvymOxUUYGSziZDeg961wURC0cSLs
+id: medium
+label: 預設中日期格式
+locked: false
+pattern: 'D, j M Y - H:i'

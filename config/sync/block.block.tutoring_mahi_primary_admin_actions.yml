@@ -1,0 +1,20 @@
+uuid: d1b667ef-f07c-4b7a-afc2-5629d20ca3bc
+langcode: en
+status: true
+dependencies:
+  theme:
+    - tutoring_mahi
+_core:
+  default_config_hash: 9x_pxnxCXxdDognBN6NPlqlSmUSyZvBXE97yhJBDhT0
+id: tutoring_mahi_primary_admin_actions
+theme: tutoring_mahi
+region: content
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: e689e47a-376a-4a5a-aadd-75afcdc98b16
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - claro
+_core:
+  default_config_hash: jccFSSVqV0WCDb6NtML1VWAWTtDbZ-zn5YgTRMgMrIM
+id: claro_help
+theme: claro
+region: help
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: 說明
+  label_display: '0'
+  provider: help
+visibility: {  }

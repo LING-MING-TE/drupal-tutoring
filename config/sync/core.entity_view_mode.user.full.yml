@@ -1,0 +1,13 @@
+uuid: a14a3f40-dc4c-4bcb-b412-9d2e6162298b
+langcode: zh-hant
+status: false
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: ZbXunWS_xAvMZXFfinyvClDAb_RCVLt7gAzE3v16E-Q
+id: user.full
+label: 使用者帳號
+description: ''
+targetEntityType: user
+cache: true

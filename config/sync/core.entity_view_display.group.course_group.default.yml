@@ -1,0 +1,59 @@
+uuid: c503afee-fe06-4771-937b-bfe6d0d1a5ef
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - field.field.group.course_group.field_class_section
+    - field.field.group.course_group.field_grade_class
+    - field.field.group.course_group.field_social
+    - field.field.group.course_group.field_subject
+    - group.type.course_group
+  module:
+    - options
+id: group.course_group.default
+targetEntityType: group
+bundle: course_group
+mode: default
+content:
+  field_class_section:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  field_grade_class:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: -2
+    region: content
+  field_social:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: -3
+    region: content
+  field_subject:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: -4
+    region: content
+  label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -5
+    region: content
+hidden:
+  changed: true
+  created: true
+  langcode: true
+  uid: true

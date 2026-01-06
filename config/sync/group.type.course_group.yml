@@ -1,0 +1,11 @@
+uuid: b7b36c2d-0454-49fa-b837-f2e6165d6bb7
+langcode: zh-hant
+status: true
+dependencies: {  }
+id: course_group
+label: 課程
+description: 補習班課程群組，每個課程為一個群組
+new_revision: true
+creator_membership: true
+creator_wizard: true
+creator_roles: {  }

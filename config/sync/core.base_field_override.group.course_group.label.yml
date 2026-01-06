@@ -1,0 +1,18 @@
+uuid: 339eea29-65be-4646-92e4-644462ceb935
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - group.type.course_group
+id: group.course_group.label
+field_name: label
+entity_type: group
+bundle: course_group
+label: 標題
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

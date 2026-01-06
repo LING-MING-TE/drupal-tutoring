@@ -1,0 +1,27 @@
+uuid: 30eaa911-90a2-4dbc-b6c8-266cb609116b
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - tutoring_bootstrap
+_core:
+  default_config_hash: KWAiziL39uEzmOJEql_wbUP2RtqGceL3WM2CfxhMelE
+id: tutoring_bootstrap_main_menu
+theme: tutoring_bootstrap
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 主選單
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility: {  }

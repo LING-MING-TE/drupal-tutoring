@@ -1,0 +1,13 @@
+uuid: 3041d186-b1f4-4ca0-93cc-82dffbcae210
+langcode: zh-hant
+status: true
+dependencies:
+  enforced:
+    theme:
+      - olivero
+_core:
+  default_config_hash: z7ynTCss9wwEi8ojENJ08qx44RN6leI-tqoN2o5QzdE
+id: olivero_medium
+label: 'Olivero Medium'
+locked: false
+pattern: 'j F Y'

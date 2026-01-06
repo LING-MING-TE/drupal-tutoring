@@ -1,0 +1,23 @@
+uuid: 15941515-1d49-4134-b652-eca2114443a9
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - tutoring_mahi
+_core:
+  default_config_hash: 1nJd5dmgBJ9PjlLE-XbwJ8cpgeWLOXDmKnrwrd5hVDc
+id: tutoring_mahi_search_form_wide
+theme: tutoring_mahi
+region: search_box
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: null
+visibility: {  }

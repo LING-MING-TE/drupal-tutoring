@@ -1,0 +1,52 @@
+uuid: 4adafe9e-c8df-48ad-b94e-f042fc1eb420
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - field.field.node.announcement_banner.field_announcement_content
+    - field.field.node.announcement_banner.field_announcement_sort
+    - field.field.node.announcement_banner.field_background_image
+    - node.type.announcement_banner
+  module:
+    - image
+    - text
+    - user
+id: node.announcement_banner.default
+targetEntityType: node
+bundle: announcement_banner
+mode: default
+content:
+  field_announcement_content:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_announcement_sort:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_background_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,10 @@
+uuid: 6d4607d5-1d23-485b-b2dd-63f9e80e01ec
+langcode: zh-hant
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: bqZsN31T2n0UjcbyCpOPi9D2iO0sAOHR7FnEs9qMvaA
+id: comment
+label: 預設回應。
+target_entity_type_id: node
+description: 'Allows commenting on content'

@@ -1,0 +1,22 @@
+uuid: 4f302e85-83f3-4a30-b4da-72cfb37141ee
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tutoring_mahi
+_core:
+  default_config_hash: 5nC6AEN8CgUyFArlXbdUoTcsTNK5rT9A7ChTOUcQWLQ
+id: tutoring_mahi_breadcrumbs
+theme: tutoring_mahi
+region: page_header
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

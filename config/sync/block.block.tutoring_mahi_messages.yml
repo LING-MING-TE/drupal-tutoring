@@ -1,0 +1,22 @@
+uuid: 1f24f59c-cc07-42aa-b959-d5f68a6c56d9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tutoring_mahi
+_core:
+  default_config_hash: hqsk-2R5ZWgsfyDgQPF8H9iNbbprbA58qBE6104-Ob4
+id: tutoring_mahi_messages
+theme: tutoring_mahi
+region: highlighted
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

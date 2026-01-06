@@ -1,0 +1,22 @@
+uuid: d4a13be9-e2d2-4eda-b0c0-405eeeb8a54b
+langcode: zh-hant
+status: true
+dependencies:
+  theme:
+    - mahipro
+_core:
+  default_config_hash: oQvhxmw_Z6KNArg-U1RuMmRCoeQrEgdbLafjvnCCIY0
+id: mahipro_primary_local_tasks
+theme: mahipro
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: 1dfbbf14-0507-492b-a6e2-df2d0fd8e7e7
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - mahipro
+_core:
+  default_config_hash: VH42DATbyn9bgYCALXdJJGPvq0ed-dhSNUwlvNOPruQ
+id: mahipro_syndicate
+theme: mahipro
+region: hidden_blocks
+weight: -6
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }

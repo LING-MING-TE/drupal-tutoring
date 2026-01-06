@@ -1,0 +1,22 @@
+uuid: d20da9a3-3fc7-4259-ac1e-dbf54456d805
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tutoring_bootstrap
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: tutoring_bootstrap_breadcrumbs
+theme: tutoring_bootstrap
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

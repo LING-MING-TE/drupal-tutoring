@@ -1,0 +1,24 @@
+uuid: 7f9188d7-809f-4a34-a3f6-47cba625d632
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - field.storage.group_relationship.field_student_notes
+    - filter.format.basic_html
+    - group.relationship_type.course_group-group_membership
+  module:
+    - text
+id: group_relationship.course_group-group_membership.field_student_notes
+field_name: field_student_notes
+entity_type: group_relationship
+bundle: course_group-group_membership
+label: 備註
+description: 註記學生的特殊狀況，如固定晚到、有過動症等
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

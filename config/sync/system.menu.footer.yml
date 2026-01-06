@@ -1,0 +1,10 @@
+uuid: 262a2719-8667-4de2-8e6f-08018b6753db
+langcode: zh-hant
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 7yrlW5z9zdg2eBucB2GPqXKSMQfH9lSRSO4DbWF7AFc
+id: footer
+label: 頁尾選單
+description: 網站資訊連結
+locked: true

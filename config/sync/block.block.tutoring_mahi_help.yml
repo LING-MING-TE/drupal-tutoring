@@ -1,0 +1,22 @@
+uuid: fcea6a0e-b78a-4cf6-a724-38a99c07672a
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - tutoring_mahi
+_core:
+  default_config_hash: uEfHX9fk0N4FDVnJ7YLOwoHoggPaV6jXDf-lNu1OD8M
+id: tutoring_mahi_help
+theme: tutoring_mahi
+region: content
+weight: -4
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

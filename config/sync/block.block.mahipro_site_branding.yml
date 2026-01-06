@@ -1,0 +1,25 @@
+uuid: 6bc5aa77-d835-45b4-84a5-b5664990142c
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mahipro
+_core:
+  default_config_hash: 0lTvXcl8Xk_iCJ-C8HS9POivbRndMjRnHXy0vLaVGcc
+id: mahipro_site_branding
+theme: mahipro
+region: site_branding
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

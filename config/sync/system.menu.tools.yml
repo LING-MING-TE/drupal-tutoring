@@ -1,0 +1,10 @@
+uuid: cae12fc8-2c8e-4549-a047-c07592391eed
+langcode: zh-hant
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: BCM-vV1zzRaLHN18dqAR_CuGOj8AFJvTx7BKl_8Gcxc
+id: tools
+label: 工具
+description: 使用者工具連結，通常為模組所增加
+locked: true

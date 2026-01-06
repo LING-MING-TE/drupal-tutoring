@@ -1,0 +1,27 @@
+uuid: 9b5bb9f7-a5b6-4818-bc08-8ad1873eaa9b
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - mahipro
+_core:
+  default_config_hash: UiC4VceLhml6EDrKyxuMKB29d4yK-RPz6dfo9HnVB3k
+id: mahipro_account_menu
+theme: mahipro
+region: hidden_blocks
+weight: -7
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 使用者帳號選單
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

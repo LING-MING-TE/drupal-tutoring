@@ -1,0 +1,10 @@
+uuid: 883c8561-3632-41d8-854e-b61db71f6b39
+langcode: zh-hant
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: M_Bh81osDyUQ4wV0GgU_NdBNqkzM87sLxjaCdFj9mnw
+id: account
+label: 使用者帳號選單
+description: 與目前的使用者帳號相關的連結
+locked: true

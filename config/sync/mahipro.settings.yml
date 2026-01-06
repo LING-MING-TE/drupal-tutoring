@@ -1,0 +1,67 @@
+_core:
+  default_config_hash: 3RUuId42ehomzjt57mome9Mzmaz3zZcVxbqRGYy4Myc
+favicon:
+  use_default: true
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  use_default: true
+preloader: 0
+sticky_header: 0
+container_width: '1200'
+header_width: header_width_contained
+main_width: main_width_contained
+footer_width: footer_width_contained
+all_icons_show: 0
+facebook_url: 'https://www.facebook.com/idewdot'
+twitter_url: 'https://twitter.com/dewdots'
+instagram_url: 'https://www.instagram.com/google'
+linkedin_url: 'https://in.linkedin.com/company/google'
+youtube_url: 'https://www.youtube.com/@dew3'
+vk_url: ''
+whatsapp_url: ''
+github_url: 'https://github.com/dewdot'
+telegram_url: ''
+vimeo_url: ''
+slider_show: 0
+slider_images: {  }
+slider_time: 5000
+slider_dots: 'true'
+slider_code: ''
+sliding_sidebar: 1
+font_src: local
+highlight_author_comment: 0
+node_author_pic: 0
+node_tags: 0
+animated_content: 0
+copyright_text: 1
+copyright_text_custom: ''
+scrolltotop_on: 1
+cookie_message: 1
+cookie_message_custom: ''
+css_extra: 1
+css_code: "/*修改header樣式*/\r\n@media (min-width: 768px) {\r\n    .site-brand img {\r\n        max-height: 140px;\r\n    }\r\n.header{\r\n  background-color:white;\r\n  padding:0;\r\n}\r\n.sidebar-menu-icon{\r\n  display:none;\r\n}\r\n.region-primary-menu .menu a{\r\n  color:black;\r\n}\r\n/* 只針對網站的 header,不影響表格 */\r\n.header.sticky-header {\r\n  position: fixed;\r\n  top: 0;\r\n  background-color: var(--dark);\r\n  padding: 10px 0;\r\n  box-shadow: 0 3px 6px #111111;\r\n  animation: fadeInDown 0.6s linear both;\r\n  z-index: 29;\r\n}\r\n\r\n/* 確保表格的 sticky-header 不會被影響 */\r\ntable.sticky-header {\r\n  position: static !important;\r\n  top: auto !important;\r\n  padding: 0 !important;\r\n  box-shadow: none !important;\r\n  animation: none !important;\r\n}\r\n/*隱藏偽元素*/\r\nbutton::before, .button::before, .button-primary::before, .button-secondary::before, .button-dark::before {\r\n  content: none !important;\r\n  display: none !important;\r\n}"
+insert_head: 0
+head_code: ''
+insert_body_start: 0
+body_start_code: ''
+insert_body_end: 0
+body_end_code: ''
+bootstrapicons: 0
+fontawesome_five: 0
+fontawesome_six: 0
+color_scheme: color_default
+color_primary: '#58c2b4'
+color_secondary: '#e9ab0d'
+color_primary_light: '#fff0f4'
+bg_body: '#ffffff'
+text_color: '#4a4a4a'
+bold_color: '#222222'
+light_color: '#fffbf6'
+dark_color: '#ffd500'
+dark_text_color: '#c3c3c3'
+border_color: '#b5b6be'
+border_dark: '#3d4353'

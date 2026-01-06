@@ -1,0 +1,10 @@
+uuid: 066988e4-9220-42bd-a73c-5d5982fed898
+langcode: zh-hant
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: M7yqicYkU36hRy5p9drAaGBBihhUD1OyujFrAaQ93ZE
+id: html_time
+label: 'HTML 時間'
+locked: true
+pattern: 'H:i:s'

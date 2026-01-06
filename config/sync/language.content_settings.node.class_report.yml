@@ -1,0 +1,11 @@
+uuid: 1a94d616-dd18-4360-9832-bbf47f865cc9
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - node.type.class_report
+id: node.class_report
+target_entity_type_id: node
+target_bundle: class_report
+default_langcode: site_default
+language_alterable: false

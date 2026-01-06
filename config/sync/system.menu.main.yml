@@ -1,0 +1,10 @@
+uuid: 8d27b0fb-694e-4871-9c38-a337a1a78acc
+langcode: zh-hant
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Q2Ra3jfoIVk0f3SjxJX61byRQFVBAbpzYDQOiY-kno8
+id: main
+label: 主選單
+description: 網站單元連結
+locked: true

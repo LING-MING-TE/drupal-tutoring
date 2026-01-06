@@ -1,0 +1,11 @@
+uuid: 42ef22be-5d45-4fca-bacf-d19c2058f1d0
+langcode: zh-hant
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: lBXDpdDPXQtrfTJQhr6MjRJJEEyYSoRJ0acdvHLsWeA
+id: en
+label: English
+direction: ltr
+weight: 0
+locked: false

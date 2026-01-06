@@ -1,0 +1,13 @@
+uuid: 85c1c9ad-cb8f-4779-9471-3a0345aa6dc3
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: DyypzTfThX10FFQw-399qPfEbLLyrhXgQrKPVsmAoJ4
+id: user_block_user_action
+label: 封鎖選擇的使用者
+type: user
+plugin: user_block_user_action
+configuration: {  }

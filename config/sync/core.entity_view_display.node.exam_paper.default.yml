@@ -1,0 +1,41 @@
+uuid: 53e63263-d70f-4290-a446-0f500bab220a
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - field.field.node.exam_paper.field_exam_date
+    - field.field.node.exam_paper.field_file
+    - node.type.exam_paper
+  module:
+    - datetime
+    - file
+    - user
+id: node.exam_paper.default
+targetEntityType: node
+bundle: exam_paper
+mode: default
+content:
+  field_exam_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_file:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,20 @@
+uuid: 3c677873-3bbc-4e9d-bb36-eb4152e89ad7
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_exam_date
+field_name: field_exam_date
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

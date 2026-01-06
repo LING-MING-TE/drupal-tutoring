@@ -1,0 +1,23 @@
+uuid: c453d57a-8fbc-4079-a50d-079109641e1a
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - tutoring_bootstrap
+_core:
+  default_config_hash: _nZjxxdypO6xrOAJkCYD81v0L7wh2zbCAVO7_C-UKIc
+id: tutoring_bootstrap_search_form_narrow
+theme: tutoring_bootstrap
+region: header
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: null
+visibility: {  }

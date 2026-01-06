@@ -1,0 +1,10 @@
+uuid: a538d357-2703-4921-aeac-427278a84a03
+langcode: zh-hant
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: SAeixlV7Djy_Ggv_1P95TiqD4KUihA5icvU521tA84Y
+id: short
+label: 預設短日期
+locked: false
+pattern: 'j M Y - H:i'

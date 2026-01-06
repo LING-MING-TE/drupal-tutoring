@@ -1,0 +1,13 @@
+uuid: d5e4e15d-9ff8-44df-8147-c812be734585
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - taxonomy
+_core:
+  default_config_hash: iukUENpf8CFvjZbGGacKX_Ges0-lU9z6zvsd32P6kbo
+id: taxonomy_term.full
+label: 分類項目頁面
+description: ''
+targetEntityType: taxonomy_term
+cache: true

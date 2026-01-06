@@ -1,0 +1,20 @@
+uuid: 1355013e-bba2-479f-bfe9-8084f4210d1a
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_ce_shi_yong_zi
+field_name: field_ce_shi_yong_zi
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

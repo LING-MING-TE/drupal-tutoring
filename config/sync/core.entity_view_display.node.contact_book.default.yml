@@ -1,0 +1,40 @@
+uuid: b20b89c2-ad9b-4872-9b6b-2e13ed2b6acd
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - field.field.node.contact_book.field_contact_content
+    - field.field.node.contact_book.field_contact_date
+    - node.type.contact_book
+  module:
+    - datetime
+    - text
+    - user
+id: node.contact_book.default
+targetEntityType: node
+bundle: contact_book
+mode: default
+content:
+  field_contact_content:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_contact_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

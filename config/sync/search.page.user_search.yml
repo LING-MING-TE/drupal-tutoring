@@ -1,0 +1,14 @@
+uuid: 7079f1e4-4ff7-41f1-9ee7-40e41b26249b
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: k3aUaZXGDuhkek2TZIee0PApOPTvYZLadziekdyHA5A
+id: user_search
+label: 使用者
+path: user
+weight: 0
+plugin: user_search
+configuration: {  }

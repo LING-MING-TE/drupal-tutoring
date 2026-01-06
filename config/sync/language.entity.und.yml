@@ -1,0 +1,11 @@
+uuid: af3481ee-81cb-4133-820e-1ea59d4e8fd1
+langcode: zh-hant
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: eNX6lLCKDaY83nCMh20My---y03KbiFlv802DKCCpvg
+id: und
+label: 沒有指定
+direction: ltr
+weight: 2
+locked: true

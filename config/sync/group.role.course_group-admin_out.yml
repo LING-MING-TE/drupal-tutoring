@@ -1,0 +1,15 @@
+uuid: 7d721edd-bcc8-4521-94de-dda05051fce6
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - group.type.course_group
+    - user.role.administrator
+id: course_group-admin_out
+label: 管理者
+weight: 101
+admin: true
+scope: outsider
+global_role: administrator
+group_type: course_group
+permissions: {  }

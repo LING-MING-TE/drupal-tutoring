@@ -1,0 +1,294 @@
+uuid: e6fb2a1c-209d-44af-86a9-736ac416659b
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - field.storage.group_relationship.field_student_notes
+    - group.relationship_type.course_group-group_membership
+  module:
+    - group
+    - text
+    - user
+id: students_list
+label: 課程成員列表
+module: views
+description: ''
+tag: ''
+base_table: group_relationship_field_data
+base_field: id
+display:
+  default:
+    id: default
+    display_title: Default
+    display_plugin: default
+    position: 0
+    display_options:
+      title: 課程成員列表
+      fields:
+        name:
+          id: name
+          table: users_field_data
+          field: name
+          relationship: gc__user
+          entity_type: user
+          entity_field: name
+          plugin_id: field
+          label: 學生姓名
+          type: user_name
+          settings:
+            link_to_entity: true
+        field_student_notes:
+          id: field_student_notes
+          table: group_relationship__field_student_notes
+          field: field_student_notes
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: 備註
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        edit_group_relationship:
+          id: edit_group_relationship
+          table: group_relationship
+          field: edit_group_relationship
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: group_relationship
+          plugin_id: entity_link_edit
+          label: 操作
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          text: 編輯
+          output_url_as_text: false
+          absolute: false
+      pager:
+        type: full
+        options:
+          items_per_page: 25
+      exposed_form:
+        type: basic
+      access:
+        type: none
+      cache:
+        type: tag
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          plugin_id: text_custom
+          empty: true
+          content: 目前此課程沒有學生。
+      sorts:
+        created:
+          id: created
+          table: group_relationship_field_data
+          field: created
+          entity_type: group_relationship
+          entity_field: created
+          plugin_id: date
+          order: DESC
+      arguments:
+        gid:
+          id: gid
+          table: group_relationship_field_data
+          field: gid
+          entity_type: group_relationship
+          entity_field: gid
+          plugin_id: numeric
+          default_action: empty
+          default_argument_type: raw
+          default_argument_options:
+            index: 1
+          specify_validation: true
+          validate:
+            type: 'entity:group'
+      filters:
+        type:
+          id: type
+          table: group_relationship_field_data
+          field: type
+          entity_type: group_relationship
+          entity_field: type
+          plugin_id: bundle
+          value:
+            course_group-group_membership: course_group-group_membership
+        group_roles_target_id:
+          id: group_roles_target_id
+          table: group_relationship__group_roles
+          field: group_roles_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: string
+          operator: '='
+          value: course_group-course_student
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      style:
+        type: table
+        options:
+          columns:
+            name: name
+            created: created
+          default: created
+          info:
+            name:
+              sortable: true
+            created:
+              sortable: true
+      row:
+        type: fields
+      relationships:
+        gc__user:
+          id: gc__user
+          table: group_relationship_field_data
+          field: gc__user
+          entity_type: group_relationship
+          plugin_id: group_relationship_to_entity
+          required: true
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+      tags:
+        - 'config:field.storage.group_relationship.field_student_notes'
+  block_1:
+    id: block_1
+    display_title: 課程學生區塊
+    display_plugin: block
+    position: 1
+    display_options:
+      display_extenders: {  }
+      block_description: 課程學生列表
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+      tags:
+        - 'config:field.storage.group_relationship.field_student_notes'

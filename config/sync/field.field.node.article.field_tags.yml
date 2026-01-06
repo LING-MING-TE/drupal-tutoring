@@ -1,0 +1,29 @@
+uuid: 9e826b32-3fdf-4372-9403-519de5ef96e4
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.article
+    - taxonomy.vocabulary.tags
+_core:
+  default_config_hash: QdUgf_beeoaPiyKorFv0q1fcJpWH_uZTqe_xoVJacrw
+id: node.article.field_tags
+field_name: field_tags
+entity_type: node
+bundle: article
+label: '標籤 (Tags)'
+description: '輸入一個以逗號分隔的列表。例如：阿姆斯特丹, 墨西哥市, "克利夫蘭, 俄亥俄州"'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: _none
+    auto_create: true
+field_type: entity_reference

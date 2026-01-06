@@ -1,0 +1,13 @@
+uuid: f0a90f8f-431f-4461-a89e-bfc09e858720
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: SPsUXsR3Rc8d1y3gewzaAKWa1ncea_ywXX3f7LTn7k0
+id: user_unblock_user_action
+label: 解除封鎖選擇的使用者
+type: user
+plugin: user_unblock_user_action
+configuration: {  }

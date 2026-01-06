@@ -1,0 +1,37 @@
+uuid: 82ef3fae-6b3c-40a9-a684-bced771776db
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - group.type.course_group
+id: course_group-course_teacher
+label: 課程老師
+weight: 103
+admin: false
+scope: individual
+global_role: null
+group_type: course_group
+permissions:
+  - 'access group_node overview'
+  - 'administer members'
+  - 'create group_node:class_report entity'
+  - 'create group_node:contact_book entity'
+  - 'create group_node:exam_paper entity'
+  - 'delete group'
+  - 'delete own group_node:class_report entity'
+  - 'delete own group_node:contact_book entity'
+  - 'delete own group_node:exam_paper entity'
+  - 'edit group'
+  - 'leave group'
+  - 'update any group_node:contact_book entity'
+  - 'update any group_node:exam_paper entity'
+  - 'update own group_node:class_report entity'
+  - 'update own group_node:contact_book entity'
+  - 'update own group_node:exam_paper entity'
+  - 'view group'
+  - 'view group_membership relationship'
+  - 'view group_node:class_report entity'
+  - 'view group_node:contact_book entity'
+  - 'view group_node:exam_paper entity'
+  - 'view own unpublished group_node:class_report entity'
+  - 'view unpublished group_node:class_report entity'

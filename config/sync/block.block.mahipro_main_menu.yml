@@ -1,0 +1,27 @@
+uuid: 51a6360c-b428-41ed-9f5f-2f450c61c918
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - mahipro
+_core:
+  default_config_hash: zuLm9UoeT-8EWygltKTRmL5gBXcV3McrT30mYDraa9g
+id: mahipro_main_menu
+theme: mahipro
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 主選單
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 3
+  expand_all_items: true
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 6945525f-b962-4b85-a85b-08a84e820a59
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tutoring_mahi
+_core:
+  default_config_hash: sHgXxeODUgvJwDDbqFUOzsPmXMWr3y_O_qFnraSvWcY
+id: tutoring_mahi_content
+theme: tutoring_mahi
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

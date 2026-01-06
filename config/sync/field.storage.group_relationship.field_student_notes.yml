@@ -1,0 +1,19 @@
+uuid: 98a93a18-6057-4b81-baec-91a2ebbdabb0
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - group
+    - text
+id: group_relationship.field_student_notes
+field_name: field_student_notes
+entity_type: group_relationship
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,13 @@
+uuid: 694c1e4c-eff7-42f3-8f83-77e38f7a8bc2
+langcode: zh-hant
+status: false
+dependencies:
+  module:
+    - block_content
+_core:
+  default_config_hash: Q7yUUYeRLByl-MCGveKKF_KhAtNICLCMJuKWfugCvso
+id: block_content.full
+label: Tam
+description: ''
+targetEntityType: block_content
+cache: true

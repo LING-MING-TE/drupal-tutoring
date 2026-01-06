@@ -1,0 +1,23 @@
+uuid: 33ae505c-5519-4ff3-89e6-c0be604c609e
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_announcement_sort
+    - node.type.announcement_banner
+id: node.announcement_banner.field_announcement_sort
+field_name: field_announcement_sort
+entity_type: node
+bundle: announcement_banner
+label: 排序
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: 10
+  prefix: ''
+  suffix: ''
+field_type: integer

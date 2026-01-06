@@ -1,0 +1,18 @@
+uuid: e33c0065-5534-46b4-9de5-21268b57bf0f
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 測試用
+type: ce_shi_yong
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,20 @@
+uuid: 7abb2b7d-1c29-42d5-8202-f3260fe4d6e0
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - course_actions
+  theme:
+    - tutoring_mahi
+id: tutoring_mahi_kechengcaozuoxuandan
+theme: tutoring_mahi
+region: content
+weight: 0
+provider: null
+plugin: course_actions_block
+settings:
+  id: course_actions_block
+  label: 課程操作選單
+  label_display: '0'
+  provider: course_actions
+visibility: {  }

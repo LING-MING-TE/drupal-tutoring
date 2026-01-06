@@ -1,0 +1,22 @@
+uuid: 9a8d7104-f4dd-45e4-bb14-5777a13fb0f1
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - mahipro
+_core:
+  default_config_hash: uEfHX9fk0N4FDVnJ7YLOwoHoggPaV6jXDf-lNu1OD8M
+id: mahipro_help
+theme: mahipro
+region: content
+weight: -4
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: 說明
+  label_display: '0'
+  provider: help
+visibility: {  }

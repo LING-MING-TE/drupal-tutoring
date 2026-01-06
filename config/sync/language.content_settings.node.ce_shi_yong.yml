@@ -1,0 +1,11 @@
+uuid: 73065378-e498-4319-8db9-716f91b9aebc
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - node.type.ce_shi_yong
+id: node.ce_shi_yong
+target_entity_type_id: node
+target_bundle: ce_shi_yong
+default_langcode: site_default
+language_alterable: false

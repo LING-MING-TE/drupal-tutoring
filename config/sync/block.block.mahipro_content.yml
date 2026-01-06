@@ -1,0 +1,22 @@
+uuid: e22904d6-1539-4e37-9b35-b4a1e6ab41ba
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mahipro
+_core:
+  default_config_hash: sHgXxeODUgvJwDDbqFUOzsPmXMWr3y_O_qFnraSvWcY
+id: mahipro_content
+theme: mahipro
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

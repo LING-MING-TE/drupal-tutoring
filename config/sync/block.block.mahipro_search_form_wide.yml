@@ -1,0 +1,23 @@
+uuid: 5c089dd2-2e40-40d8-a8a9-c511a6975667
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - mahipro
+_core:
+  default_config_hash: 1nJd5dmgBJ9PjlLE-XbwJ8cpgeWLOXDmKnrwrd5hVDc
+id: mahipro_search_form_wide
+theme: mahipro
+region: search_box
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: null
+visibility: {  }

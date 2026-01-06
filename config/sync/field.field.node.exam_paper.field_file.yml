@@ -1,0 +1,27 @@
+uuid: cb97a553-2753-4340-8678-b3b0f6bd737f
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file
+    - node.type.exam_paper
+  module:
+    - file
+id: node.exam_paper.field_file
+field_name: field_file
+entity_type: node
+bundle: exam_paper
+label: 考卷檔
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: txt
+  max_filesize: ''
+  description_field: false
+field_type: file

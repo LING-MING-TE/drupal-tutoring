@@ -1,0 +1,17 @@
+uuid: e778017e-8b70-4d03-807d-979f547f07f5
+langcode: zh-hant
+status: true
+dependencies:
+  config:
+    - group.type.course_group
+    - node.type.exam_paper
+  module:
+    - gnode
+    - node
+id: course_group-402837d8f9dfe6e08d3
+group_type: course_group
+content_plugin: 'group_node:exam_paper'
+plugin_config:
+  group_cardinality: 1
+  entity_cardinality: 1
+  use_creation_wizard: false

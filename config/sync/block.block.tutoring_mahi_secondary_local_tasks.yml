@@ -1,0 +1,22 @@
+uuid: cfa55804-3593-476a-be34-ddba2f79f7f8
+langcode: en
+status: true
+dependencies:
+  theme:
+    - tutoring_mahi
+_core:
+  default_config_hash: efOCwplo-IK9u1g8yB3OL79GVEhbmBP3fZpeSR3y9Gs
+id: tutoring_mahi_secondary_local_tasks
+theme: tutoring_mahi
+region: content
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }
